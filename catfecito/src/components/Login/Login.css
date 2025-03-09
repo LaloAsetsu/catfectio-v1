@@ -1,0 +1,129 @@
+.login-div {
+  width: 100%;
+  min-height: 100vh; 
+  background: #FFE2E2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 0 20px; 
+  flex-wrap: wrap;
+}
+
+
+.catfecito-login,
+.cat-cafe-login {
+  width: 300px;
+  height: auto;
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+.form-login {
+  width: 100%;
+  max-width: 443px;
+  min-width: 320px;
+  height: auto;
+  padding: 24px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.input-field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.user-input,
+.password-input {
+  width: 100%;
+  padding: 12px 16px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #d9d9d9;
+  font-size: 14px;
+}
+
+.button-group {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+}
+
+.login-button {
+  flex: 1;
+  padding: 12px;
+  background: #2c2c2c;
+  color: white;
+  border-radius: 8px;
+  border: 1px solid #2c2c2c;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.login-button:hover {
+  background: #444;
+}
+
+@media (max-width: 1024px) {
+  .login-div {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .form-login {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-div {
+    padding: 15px;
+  }
+
+  .catfecito-login,
+  .cat-cafe-login {
+    width: 250px;
+  }
+
+  .form-login {
+    width: 90%;
+    max-width: 360px;
+  }
+
+  .login-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .catfecito-login,
+  .cat-cafe-login {
+    width: 200px;
+  }
+
+  .form-login {
+    width: 100%;
+    max-width: 320px;
+  }
+}

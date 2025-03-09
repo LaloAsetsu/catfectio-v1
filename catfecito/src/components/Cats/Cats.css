@@ -1,0 +1,91 @@
+.CatsDiv {
+  width: 100%; 
+  padding: 0 20px; 
+  background:  #FFE2E2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CatsTitle {
+  color: #690101;
+  font-size: 62px;
+  font-family: Lora, serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.CatsItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px; 
+  width: 100%;
+}
+
+.ProductInfoCard {
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #D9D9D9;
+  padding: 16px;
+  text-align: center;
+  width: calc(33.33% - 20px); 
+  max-width: 240px;
+  min-width: 180px; 
+}
+
+.ProductInfoCard img {
+  width: 100%;
+  height: 220px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.CatName {
+  color: #2C2C2C;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.CatDescription {
+  color: #555;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1024px) {
+  .CatsTitle {
+    font-size: 48px;
+  }
+
+  .ProductInfoCard {
+    width: calc(50% - 20px); 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .CatsTitle {
+    font-size: 36px;
+  }
+
+  .CatsItems {
+    gap: 15px;
+  }
+
+  .ProductInfoCard {
+    width: calc(50% - 15px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .CatsTitle {
+    font-size: 28px;
+  }
+
+  .ProductInfoCard {
+    width: 100%; 
+    max-width: 300px;
+  }
+}
