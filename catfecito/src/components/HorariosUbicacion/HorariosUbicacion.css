@@ -1,37 +1,57 @@
-.HorariosUbicacionDiv { 
+.HorariosUbicacionDiv {
     width: 100%;
-    height: 500px; 
-    background: #FFE2E2; 
-    position: relative; 
-    text-align: center; 
-    padding-top: 32px; 
-    padding: 0 20px; } 
-.HorariosYUbicacion { 
-    color: #690101; 
-    font-size: 62px; 
-    font-family: Lora, serif; 
-    font-weight: 600; } 
-.HorarioTexto { 
-    position: absolute; 
-    left: 180px; 
-    top: 200px; 
-    text-align: center; 
-    font-family: "Instrument Sans", sans-serif; 
-    font-size: 20px; 
-    line-height: 28px; } 
-.HorarioTexto span { 
-    display: block; } 
-.HorarioTitulo { 
-    color: #8B0000; 
-    font-weight: 600; } 
-.HorarioDetalle { 
-    color: black; 
-    font-weight: 400; } 
-.UbicacionMapa { position: absolute; 
-    width: 400px; 
-    height: 300px; 
-    left: 50%; 
-    top: 20%; 
-    top: 160px; 
-    border-radius: 8px; 
-    border: 0; }
+    background: #FFE2E2;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .HorariosYUbicacion {
+    color: #690101;
+    font-size: 62px;
+    font-family: "Lora", serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .HorariosUbicacionContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+
+  .HorarioTexto {
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+    max-width: 300px;
+  }
+  
+  .HorarioTitulo {
+    color: #8B0000;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .HorarioDetalle {
+    color: black;
+    font-weight: 400;
+    display: block;
+  }
+  
+  .MapaContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .UbicacionMapa {
+    width: 400px;
+    height: 300px;
+    border-radius: 8px;
+    border: 0;
+  }
+  
